@@ -13,7 +13,7 @@ This system is ideal for games that require server-side logic or games that want
 
 If you're developing a game with server-side logic, this system allows the server to pre-decide where the wheel will stop (e.g., based on player data or other conditions). While the server already makes the decision, the wheel is shown to the player with smooth, random animations, creating the illusion that the outcome is random. This approach is useful for games that need to store results in a database and return information to the player.
 
-![Screenshot_3](https://github.com/user-attachments/assets/c921117f-7230-4a5b-b603-78c235a12f7a)
+![Screenshot_4](https://github.com/user-attachments/assets/20f3be12-eae9-414a-a0bb-59d750faf39e)
 
 
 ### Balancing the game based on statistics
