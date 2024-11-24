@@ -6,7 +6,7 @@ public class WheelSegment
     public string Label;
     public float Value;
     public Color Color;
-    [HideInInspector] public SegmentAngles Angles = new SegmentAngles();
+    [HideInInspector] public SegmentAngles Angles = new SegmentAngles(); 
 }
 
 [System.Serializable]

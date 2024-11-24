@@ -5,8 +5,6 @@ public class WheelOfFortuneGenerator : MonoBehaviour
 {
     [SerializeField] private protected List<WheelSegment> _segments = new List<WheelSegment>();
 
-    private void Start() => DrawRawWheelOfFortune();
-
     /// <summary>
     /// Draws the wheel based on the defined segments.
     /// </summary>
@@ -19,7 +17,7 @@ public class WheelOfFortuneGenerator : MonoBehaviour
             total += segment.Value;
         }
 
-        float startSegmentAngle = 0f;
+        float startSegmentAngle = 0f; // Initial angle for the start of the first segment.
         foreach (var segment in _segments)
         {
             // Calculate the percentage and angle of the segment relative to the total.
@@ -47,8 +45,7 @@ public class WheelOfFortuneGenerator : MonoBehaviour
         // Create a new GameObject for the segment with its necessary components.
         GameObject segment = new GameObject(name, typeof(MeshFilter), typeof(MeshRenderer));
         segment.transform.parent = transform;
-
-        segment.transform.localRotation = Quaternion.Euler(0, 180f, startSegmentAngle);
+        segment.transform.localRotation = Quaternion.Euler(0, 0, startSegmentAngle);
         segment.transform.localPosition = Vector3.zero;
         segment.gameObject.name = name;
 
